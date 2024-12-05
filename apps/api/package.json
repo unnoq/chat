@@ -1,0 +1,16 @@
+{
+  "name": "@unnoq/chat-api",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx --watch ./src/main.ts",
+    "build": "tsup --clean --sourcemap --entry.main=src/main.ts --format=esm",
+    "build:watch": "pnpm run build --watch",
+    "preview": "node ./dist/main.js",
+    "type:check": "tsc -b"
+  },
+  "devDependencies": {
+    "@types/node": "latest"
+  }
+}
